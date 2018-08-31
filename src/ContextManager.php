@@ -10,7 +10,7 @@ class ContextManager
      * The collection of Contexts
      * @var array
      */
-    private $contexts;
+    private $contexts = array();
 
     /**
      * Add a context to the collection
