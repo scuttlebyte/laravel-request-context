@@ -23,6 +23,8 @@ You can install the package via composer:
 composer require scuttlebyte/laravel-request-context
 ```
 
+Note: Laravel 5.4+ is required.
+
 ## Usage
 
 Register context for later use in the request
