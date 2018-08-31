@@ -1,6 +1,6 @@
 {
-  "name": "scuttlebyte/context-manager",
-  "description": "Manage additional Request Contexts (metadata) for Laravel projects with ease",
+  "name": "scuttlebyte/laravel-request-context",
+  "description": "Store and access contextual request data with ease",
   "type": "library",
   "require-dev": {
     "phpunit/phpunit": "^6",
@@ -10,16 +10,27 @@
   "authors": [
     {
       "name": "Jake A. Harris",
-      "email": "jake@scuttlebyte.com"
+      "email": "jake@scuttlebyte.com",
+      "homepage": "https://jakeharris.xyz",
+      "role": "developer"
     }
   ],
   "minimum-stability": "stable",
-  "require": {},
+  "require": {
+    "php": "^7.1"
+  },
   "autoload": {
     "psr-4": {
       "Scuttlebyte\\ContextManager\\": "src/",
       "Scuttlebyte\\ContextManager\\Tests\\": "tests/"
     }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
   },
   "extra": {
     "laravel": {

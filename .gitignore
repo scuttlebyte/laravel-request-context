@@ -1,1 +1,6 @@
 vendor/
+build/
+*phpunit.xml
+coverage
+composer.lock
+.idea
