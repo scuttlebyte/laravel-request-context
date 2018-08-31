@@ -22,4 +22,12 @@ class ServiceProviderTest extends TestCase
     {
         self::assertInstanceOf(ContextManager::class, $this->app['request']->context());
     }
+
+    /**
+     * @test
+     */
+    public function binds_a_helper_method()
+    {
+        self::assertInstanceOf(ContextManager::class, context());
+    }
 }
