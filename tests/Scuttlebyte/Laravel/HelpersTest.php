@@ -3,6 +3,7 @@
 namespace Scuttlebyte\ContextManager\Tests\Scuttlebyte\Laravel;
 
 use Scuttlebyte\ContextManager\ContextManager;
+use Scuttlebyte\ContextManager\Laravel\Facade;
 use Scuttlebyte\ContextManager\Tests\TestCase;
 
 class HelpersTest extends TestCase
@@ -39,5 +40,22 @@ class HelpersTest extends TestCase
         self::assertEquals("You are a sad, strange little man, and you have my pity.", context('Buzz'));
         self::assertEquals("Reach for the sky!", context('Woody'));
         self::assertEquals("Let's go home and play.", context('Sid'));
+    }
+
+    /**
+     * @test
+     */
+    public function puts_and_gets_a_context_from_facade()
+    {
+        \Context::put('Woody', "Somebody poisoned the watering hole!");
+
+        self::assertEquals("Somebody poisoned the watering hole!", \Context::get('Woody'));
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            'Context' => Facade::class
+        ];
     }
 }

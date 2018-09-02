@@ -41,7 +41,7 @@
         "Scuttlebyte\\ContextManager\\Laravel\\ServiceProvider"
       ],
       "aliases": {
-        "Bar": "Scuttlebyte\\ContextManager\\Laravel\\ServiceProvider"
+        "Context": "Scuttlebyte\\ContextManager\\Laravel\\Facade"
       }
     }
   }
