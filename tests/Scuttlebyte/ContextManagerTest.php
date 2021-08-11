@@ -1,6 +1,6 @@
 <?php
 
-namespace Scuttlebyte\ContextManager\Tests;
+namespace Tests\Scuttlebyte;
 
 use PHPUnit\Framework\TestCase;
 use Scuttlebyte\ContextManager\ContextManager;

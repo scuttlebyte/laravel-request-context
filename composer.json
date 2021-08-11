@@ -22,12 +22,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Scuttlebyte\\ContextManager\\": "src/",
-      "Scuttlebyte\\ContextManager\\Tests\\": "tests/"
+      "Scuttlebyte\\ContextManager\\": "src/"
     },
     "files": [
       "src/helpers.php"
     ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
   },
   "scripts": {
     "test": "vendor/bin/phpunit",

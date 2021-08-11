@@ -1,10 +1,10 @@
 <?php
 
-namespace Scuttlebyte\ContextManager\Tests\Scuttlebyte\Laravel;
+namespace Tests\Scuttlebyte\Laravel;
 
 use Scuttlebyte\ContextManager\ContextManager;
 use Scuttlebyte\ContextManager\Laravel\Facade;
-use Scuttlebyte\ContextManager\Tests\TestCase;
+use Tests\TestCase;
 
 class HelpersTest extends TestCase
 {
