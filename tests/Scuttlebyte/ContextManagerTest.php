@@ -9,10 +9,11 @@ class ContextManagerTest extends TestCase
 {
     /**
      * @test
-     * @expectedException \Scuttlebyte\ContextManager\Exception\UnregisteredContextException
      */
     public function throws_exceptions_when_a_context_has_not_been_registered()
     {
+        $this->expectException(\Scuttlebyte\ContextManager\Exception\UnregisteredContextException::class);
+
         $sut = new ContextManager();
 
         $sut->put('Woody', "There's a snake in my boots!");
