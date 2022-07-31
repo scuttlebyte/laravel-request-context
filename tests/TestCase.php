@@ -1,6 +1,6 @@
 <?php
 
-namespace Scuttlebyte\ContextManager\Tests;
+namespace Tests;
 
 use Scuttlebyte\ContextManager\Laravel\ServiceProvider;
 
